@@ -1,6 +1,6 @@
 #include <SPI.h>
-#include <nRF24L01.h>
-#include <RF24.h>
+#include </Users/reyna/Desktop/RF24/nRF24L01.h>
+#include </Users/reyna/Desktop/RF24/RF24.h>
 
 // wiring -->
 // VCC+ to 3.3V
