@@ -6640,6 +6640,126 @@ TRI-COLOR LED</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="diy01-arduino-library">
+<packages>
+<package name="AS01-ML01DP5_FOOT">
+<pad name="MISO" x="0" y="0" drill="0.6" shape="square"/>
+<pad name="SCK" x="0" y="-3" drill="0.6" shape="square"/>
+<pad name="CE" x="0" y="-6" drill="0.6" shape="square"/>
+<pad name="GND" x="0" y="-9" drill="0.6" shape="square"/>
+<pad name="3.3V" x="3" y="-9" drill="0.6" shape="square"/>
+<pad name="CSN" x="3" y="-6" drill="0.6" shape="square"/>
+<pad name="MOSI" x="3" y="-3" drill="0.6" shape="square"/>
+<pad name="IRQ" x="3" y="0" drill="0.6" shape="square"/>
+<hole x="0" y="0" drill="0.35"/>
+<hole x="3" y="0" drill="0.35"/>
+<hole x="0" y="-3" drill="0.35"/>
+<hole x="3" y="-3" drill="0.35"/>
+<hole x="0" y="-6" drill="0.35"/>
+<hole x="3" y="-6" drill="0.35"/>
+<hole x="0" y="-9" drill="0.35"/>
+<hole x="3" y="-9" drill="0.35"/>
+<wire x1="-1.5" y1="4.5" x2="31.8" y2="4.5" width="0.127" layer="1"/>
+<wire x1="31.8" y1="4.5" x2="31.8" y2="-13.5" width="0.127" layer="1"/>
+<wire x1="31.8" y1="-13.5" x2="-1.5" y2="-13.5" width="0.127" layer="1"/>
+<wire x1="-1.5" y1="-13.5" x2="-1.5" y2="4.5" width="0.127" layer="1"/>
+</package>
+<package name="HDRV8W64P254_2X4_1016X508X838B" urn="urn:adsk.eagle:footprint:21263685/1">
+<description>Double-row, 8-pin Pin Header (Male) Straight, 2.54 mm (0.10 in) row pitch, 2.54 mm (0.10 in) col pitch, 5.84 mm mating length, 10.16 X 5.08 X 8.38 mm body
+&lt;p&gt;Double-row (2X4), 8-pin Pin Header (Male) Straight package with 2.54 mm (0.10 in) row pitch, 2.54 mm (0.10 in) col pitch, 0.64 mm lead width, 3.00 mm tail length and 5.84 mm mating length with overall size 10.16 X 5.08 X 8.38 mm, pin pattern - clockwise from top left&lt;/p&gt;</description>
+<circle x="0" y="1.774" radius="0.25" width="0" layer="21"/>
+<wire x1="8.89" y1="-3.81" x2="-1.27" y2="-3.81" width="0.12" layer="21"/>
+<wire x1="-1.27" y1="-3.81" x2="-1.27" y2="1.27" width="0.12" layer="21"/>
+<wire x1="-1.27" y1="1.27" x2="8.89" y2="1.27" width="0.12" layer="21"/>
+<wire x1="8.89" y1="1.27" x2="8.89" y2="-3.81" width="0.12" layer="21"/>
+<wire x1="8.89" y1="-3.81" x2="-1.27" y2="-3.81" width="0.12" layer="51"/>
+<wire x1="-1.27" y1="-3.81" x2="-1.27" y2="1.27" width="0.12" layer="51"/>
+<wire x1="-1.27" y1="1.27" x2="8.89" y2="1.27" width="0.12" layer="51"/>
+<wire x1="8.89" y1="1.27" x2="8.89" y2="-3.81" width="0.12" layer="51"/>
+<pad name="1" x="0" y="0" drill="1.1051" diameter="1.7051"/>
+<pad name="2" x="2.54" y="0" drill="1.1051" diameter="1.7051"/>
+<pad name="3" x="5.08" y="0" drill="1.1051" diameter="1.7051"/>
+<pad name="4" x="7.62" y="0" drill="1.1051" diameter="1.7051"/>
+<pad name="5" x="7.62" y="-2.54" drill="1.1051" diameter="1.7051"/>
+<pad name="6" x="5.08" y="-2.54" drill="1.1051" diameter="1.7051"/>
+<pad name="7" x="2.54" y="-2.54" drill="1.1051" diameter="1.7051"/>
+<pad name="8" x="0" y="-2.54" drill="1.1051" diameter="1.7051"/>
+<text x="0" y="2.659" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-4.445" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+</package>
+</packages>
+<packages3d>
+<package3d name="HDRV8W64P254_2X4_1016X508X838B" urn="urn:adsk.eagle:package:21263681/1" type="model">
+<description>Double-row, 8-pin Pin Header (Male) Straight, 2.54 mm (0.10 in) row pitch, 2.54 mm (0.10 in) col pitch, 5.84 mm mating length, 10.16 X 5.08 X 8.38 mm body
+&lt;p&gt;Double-row (2X4), 8-pin Pin Header (Male) Straight package with 2.54 mm (0.10 in) row pitch, 2.54 mm (0.10 in) col pitch, 0.64 mm lead width, 3.00 mm tail length and 5.84 mm mating length with overall size 10.16 X 5.08 X 8.38 mm, pin pattern - clockwise from top left&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="HDRV8W64P254_2X4_1016X508X838B"/>
+</packageinstances>
+</package3d>
+</packages3d>
+<symbols>
+<symbol name="AS01-ML01DP5_SYMBOL">
+<description>AS01-ML01DP5 radio signal transmitter and receiver compatible with arduino and rpi</description>
+<pin name="IRQ" x="-48.26" y="20.32" length="middle"/>
+<pin name="MOSI" x="-48.26" y="17.78" length="middle"/>
+<pin name="CSN" x="-48.26" y="15.24" length="middle"/>
+<pin name="3.3V" x="-48.26" y="12.7" length="middle"/>
+<pin name="MISO" x="-20.32" y="20.32" length="middle" rot="R180"/>
+<pin name="SCK" x="-20.32" y="17.78" length="middle" rot="R180"/>
+<pin name="CE" x="-20.32" y="15.24" length="middle" rot="R180"/>
+<pin name="GND" x="-20.32" y="12.7" length="middle" rot="R180"/>
+<wire x1="-25.4" y1="10.16" x2="-25.4" y2="22.86" width="0.254" layer="94"/>
+<wire x1="-25.4" y1="10.16" x2="-43.18" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-43.18" y1="10.16" x2="-43.18" y2="22.86" width="0.254" layer="94"/>
+<wire x1="-43.18" y1="22.86" x2="-25.4" y2="22.86" width="0.254" layer="94"/>
+<text x="-38.1" y="7.62" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-38.1" y="22.86" size="1.778" layer="95">&gt;NAME</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="AS01-ML01DP5_DEVICE">
+<description>AS01-ML01DP5 rf transmitter and receiver compatible with arduino and rpi</description>
+<gates>
+<gate name="G$1" symbol="AS01-ML01DP5_SYMBOL" x="-45.72" y="12.7"/>
+</gates>
+<devices>
+<device name="" package="AS01-ML01DP5_FOOT">
+<connects>
+<connect gate="G$1" pin="3.3V" pad="3.3V"/>
+<connect gate="G$1" pin="CE" pad="CE"/>
+<connect gate="G$1" pin="CSN" pad="CSN"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="IRQ" pad="IRQ"/>
+<connect gate="G$1" pin="MISO" pad="MISO"/>
+<connect gate="G$1" pin="MOSI" pad="MOSI"/>
+<connect gate="G$1" pin="SCK" pad="SCK"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="PIN_HEADS" package="HDRV8W64P254_2X4_1016X508X838B">
+<connects>
+<connect gate="G$1" pin="3.3V" pad="1"/>
+<connect gate="G$1" pin="CE" pad="7"/>
+<connect gate="G$1" pin="CSN" pad="2"/>
+<connect gate="G$1" pin="GND" pad="8"/>
+<connect gate="G$1" pin="IRQ" pad="4"/>
+<connect gate="G$1" pin="MISO" pad="5"/>
+<connect gate="G$1" pin="MOSI" pad="3"/>
+<connect gate="G$1" pin="SCK" pad="6"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:21263681/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -6692,6 +6812,8 @@ TRI-COLOR LED</description>
 <part name="D1" library="SparkFun-LED" library_urn="urn:adsk.eagle:library:529" deviceset="LED-RGB-CA" device="CLEAR" package3d_urn="urn:adsk.eagle:package:39368/1" value="CLEAR"/>
 <part name="R9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="V234/12" package3d_urn="urn:adsk.eagle:package:23592/1"/>
 <part name="R10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="V234/12" package3d_urn="urn:adsk.eagle:package:23592/1"/>
+<part name="GND17" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="U$3" library="diy01-arduino-library" deviceset="AS01-ML01DP5_DEVICE" device="PIN_HEADS" package3d_urn="urn:adsk.eagle:package:21263681/1"/>
 </parts>
 <sheets>
 <sheet>
@@ -6768,8 +6890,8 @@ TRI-COLOR LED</description>
 <attribute name="NAME" x="127" y="44.704" size="1.778" layer="95" font="vector" align="bottom-center"/>
 <attribute name="VALUE" x="127" y="41.656" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
-<instance part="GND1" gate="1" x="45.72" y="48.26" smashed="yes" rot="R270">
-<attribute name="VALUE" x="43.18" y="50.8" size="1.778" layer="96" rot="R270"/>
+<instance part="GND1" gate="1" x="53.34" y="48.26" smashed="yes" rot="R270">
+<attribute name="VALUE" x="50.8" y="50.8" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="GND2" gate="1" x="88.9" y="147.32" smashed="yes" rot="R270">
 <attribute name="VALUE" x="86.36" y="149.86" size="1.778" layer="96" rot="R270"/>
@@ -6848,6 +6970,13 @@ TRI-COLOR LED</description>
 <attribute name="NAME" x="115.3414" y="130.81" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="120.142" y="130.81" size="1.778" layer="96" rot="R90"/>
 </instance>
+<instance part="GND17" gate="1" x="33.02" y="81.28" smashed="yes">
+<attribute name="VALUE" x="30.48" y="78.74" size="1.778" layer="96"/>
+</instance>
+<instance part="U$3" gate="G$1" x="53.34" y="83.82" smashed="yes">
+<attribute name="VALUE" x="15.24" y="91.44" size="1.778" layer="96"/>
+<attribute name="NAME" x="15.24" y="106.68" size="1.778" layer="95"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -6888,7 +7017,7 @@ TRI-COLOR LED</description>
 <segment>
 <pinref part="B1" gate="G$1" pin="GND@0"/>
 <pinref part="GND1" gate="1" pin="GND"/>
-<wire x1="58.42" y1="48.26" x2="48.26" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="48.26" x2="55.88" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND3" gate="1" pin="GND"/>
@@ -6934,6 +7063,11 @@ TRI-COLOR LED</description>
 <pinref part="GND2" gate="1" pin="GND"/>
 <wire x1="93.98" y1="146.05" x2="91.44" y2="146.05" width="0.1524" layer="91"/>
 <wire x1="91.44" y1="146.05" x2="91.44" y2="147.32" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND17" gate="1" pin="GND"/>
+<wire x1="33.02" y1="83.82" x2="33.02" y2="96.52" width="0.1524" layer="91"/>
+<pinref part="U$3" gate="G$1" pin="GND"/>
 </segment>
 </net>
 <net name="+5V" class="0">
@@ -7075,10 +7209,10 @@ TRI-COLOR LED</description>
 <pinref part="U$1" gate="G$1" pin="SW"/>
 <wire x1="165.1" y1="129.54" x2="124.46" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="129.54" x2="124.46" y2="154.94" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="154.94" x2="45.72" y2="154.94" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="154.94" x2="45.72" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="154.94" x2="48.26" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="154.94" x2="48.26" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="B1" gate="G$1" pin="3"/>
-<wire x1="45.72" y1="73.66" x2="58.42" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="73.66" x2="58.42" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$16" class="0">
@@ -7178,6 +7312,71 @@ TRI-COLOR LED</description>
 <wire x1="109.22" y1="124.46" x2="109.22" y2="134.62" width="0.1524" layer="91"/>
 <pinref part="B1" gate="G$1" pin="15(RX3)"/>
 <wire x1="109.22" y1="134.62" x2="93.98" y2="134.62" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$14" class="0">
+<segment>
+<wire x1="5.08" y1="96.52" x2="2.54" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="2.54" y1="96.52" x2="2.54" y2="129.54" width="0.1524" layer="91"/>
+<pinref part="B1" gate="G$1" pin="3.3V"/>
+<wire x1="2.54" y1="129.54" x2="58.42" y2="129.54" width="0.1524" layer="91"/>
+<pinref part="U$3" gate="G$1" pin="3.3V"/>
+<junction x="5.08" y="96.52"/>
+</segment>
+</net>
+<net name="N$21" class="0">
+<segment>
+<pinref part="B1" gate="G$1" pin="8"/>
+<wire x1="2.54" y1="60.96" x2="58.42" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="2.54" y1="60.96" x2="2.54" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="2.54" y1="93.98" x2="1.27" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="U$3" gate="G$1" pin="CSN"/>
+<wire x1="1.27" y1="93.98" x2="1.27" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="1.27" y1="99.06" x2="5.08" y2="99.06" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$22" class="0">
+<segment>
+<wire x1="33.02" y1="99.06" x2="38.1" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="99.06" x2="40.64" y2="63.5" width="0.1524" layer="91"/>
+<pinref part="B1" gate="G$1" pin="7"/>
+<wire x1="40.64" y1="63.5" x2="58.42" y2="63.5" width="0.1524" layer="91"/>
+<pinref part="U$3" gate="G$1" pin="CE"/>
+</segment>
+</net>
+<net name="N$23" class="0">
+<segment>
+<wire x1="7.62" y1="101.6" x2="5.08" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="5.08" y1="101.6" x2="3.556" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="3.556" y1="101.6" x2="3.556" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="3.556" y1="27.94" x2="104.14" y2="27.94" width="0.1524" layer="91"/>
+<pinref part="B1" gate="G$1" pin="51"/>
+<wire x1="104.14" y1="27.94" x2="104.14" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="43.18" x2="93.98" y2="43.18" width="0.1524" layer="91"/>
+<pinref part="U$3" gate="G$1" pin="MOSI"/>
+<junction x="5.08" y="101.6"/>
+</segment>
+</net>
+<net name="N$24" class="0">
+<segment>
+<pinref part="B1" gate="G$1" pin="50"/>
+<wire x1="93.98" y1="45.72" x2="106.68" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="45.72" x2="106.68" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="25.4" x2="38.1" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="25.4" x2="35.56" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="101.6" x2="33.02" y2="101.6" width="0.1524" layer="91"/>
+<pinref part="U$3" gate="G$1" pin="SCK"/>
+</segment>
+</net>
+<net name="N$25" class="0">
+<segment>
+<wire x1="33.02" y1="104.14" x2="45.72" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="104.14" x2="48.26" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="20.32" x2="109.22" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="20.32" x2="109.22" y2="48.26" width="0.1524" layer="91"/>
+<pinref part="B1" gate="G$1" pin="49"/>
+<wire x1="109.22" y1="48.26" x2="93.98" y2="48.26" width="0.1524" layer="91"/>
+<pinref part="U$3" gate="G$1" pin="MISO"/>
 </segment>
 </net>
 </nets>
