@@ -2989,6 +2989,26 @@ design rules under a new name.</description>
 <contactref element="B1" pad="3.3V"/>
 <wire x1="33.02" y1="3.81" x2="46.99" y2="69.85" width="0" layer="19" extent="1-1"/>
 </signal>
+<signal name="N$21">
+<contactref element="U$3" pad="3"/>
+<contactref element="B1" pad="8"/>
+<wire x1="39.116" y1="52.07" x2="52.07" y2="69.85" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$22">
+<contactref element="U$3" pad="2"/>
+<contactref element="B1" pad="7"/>
+<wire x1="43.18" y1="52.07" x2="49.53" y2="69.85" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$23">
+<contactref element="U$3" pad="7"/>
+<contactref element="B1" pad="51"/>
+<wire x1="93.98" y1="13.97" x2="49.53" y2="67.31" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$24">
+<contactref element="B1" pad="50"/>
+<contactref element="U$3" pad="8"/>
+<wire x1="91.44" y1="13.97" x2="46.99" y2="67.31" width="0" layer="19" extent="1-1"/>
+</signal>
 </signals>
 <mfgpreviewcolors>
 <mfgpreviewcolor name="soldermaskcolor" color="0xC8008000"/>
